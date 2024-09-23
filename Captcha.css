@@ -1,0 +1,91 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 400px;
+}
+
+.captcha-box h3 {
+  color: #000000;
+  text-decoration: line-through;
+  font-weight: bolder;
+}
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.refresh-img{
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+}
+
+.userInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.check-btn{
+  background-color: #68d391;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px 0;
+}
+
+.check-btn:hover {
+  background-color: #5ab382;
+}
+
+.generate-btn{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin-left: 15px;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+/* Add this to your existing CSS */
+.userInput.error {
+  border-color: red;
+}
+
+.message.incorrect {
+  color: red;
+}
